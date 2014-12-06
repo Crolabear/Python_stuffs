@@ -30,6 +30,7 @@ def find_common(list1,list2):
   temp=[]
   for item in list1:
     if item in list2:
+      list2.remove(item)
       temp.append(item)
   return temp
 
